@@ -42,7 +42,11 @@ while running:
             circle2.grow(18)
             circle3.grow(18)
             pygame.display.update()
-    
+        if event.type==pygame.MOUSEMOTION:
+            pos=pygame.mouse.get_pos()
+            circle4=Circle("black",5,pos)
+            circle4.draw()
+            pygame.display.update()
 
 
 
